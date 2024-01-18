@@ -1,6 +1,7 @@
 import { PymeCards } from '../components/pymes'
 import { Contact } from '../components/ui'
-import { getAllPymes, getPymeByTags } from '../database/dbPymes'
+import { getPymeByTags } from '../database/dbPymes'
+
 
 
 

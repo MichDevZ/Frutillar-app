@@ -1,6 +1,6 @@
 import { Irating } from "@/app/interfaces";
 import { Instagram, WhatsApp } from "@mui/icons-material";
-import { Box, Card, CardContent, CardMedia, Grid, Rating, Typography } from "@mui/material"
+import { Box, Card, CardContent, CardMedia, Grid, Rating, Typography } from "@mui/material/index"
 import Link from "next/link";
 import { FC } from 'react';
 
