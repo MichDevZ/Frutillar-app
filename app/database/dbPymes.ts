@@ -25,8 +25,8 @@ export async function getPymeBySlug (slug: string | null) {
     await db.connect();
     const pyme = await Pymes.find({slug: slug})
 
-    if (pyme.length <= 0) {
-        redirect('./')
+    if (pyme) {
+        redirect('../')
     }
 
     await db.disconnect();
@@ -51,9 +51,6 @@ export async function getPymeByTags (tag: string | null) {
     const pyme = await Pymes.find({tags: {$in: [tag]}})
     await db.disconnect();
     
-    if (pyme.length <= 0) {
-        redirect('./')
-    }
 
     return pyme
     

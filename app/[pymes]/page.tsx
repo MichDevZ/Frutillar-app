@@ -11,10 +11,13 @@ const PymesPage = async ({params}: any) => {
 
   const products = await getPymeByTags(pymes);
 
+
   return (
     <>
+
     {
-      products.map(product => (
+      products.length <= 0 ? <h2 style={{textAlign: 'center', marginBottom: 10, fontSize: 20, padding: 50}}> Aún no hay pymes en esta categoria 😔</h2> 
+      : products.map(product => (
 
         <PymeCards 
           key={product.slug}
