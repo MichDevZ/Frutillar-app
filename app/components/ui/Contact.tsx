@@ -12,7 +12,7 @@ export const Contact: FC = () => {
           <Grid item sm={12} textAlign={'center'} >
               <Typography fontWeight={'bold'} >Te interesa formar parte? Contactame!</Typography>
           </Grid>
-          <Grid item sm={12} justifyContent={'center'} display={'flex'} >
+          <Grid item sm={12} xs={12} justifyContent={'center'} display={'flex'} >
             <Link href={''}>
               <WhatsApp  sx={{color: '#25D366', fontSize: 50, my: 1}} />
             </Link>

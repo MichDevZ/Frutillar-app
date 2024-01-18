@@ -29,7 +29,7 @@ export const Cards: FC <Props> = ({title, description, image}) => {
                 <Typography variant="h2" 
                 sx={{fontSize: 15, fontWeight: 'bold', my: 1, textAlign: esMovil ? 'center' : ''}}>{title}</Typography>
                 <Typography variant="h6" 
-                sx={{fontSize: 12, fontStyle: 'italic', textAlign: esMovil ? 'center' : '', padding: esMovil ? '0 1px 0 1px': ''}} >{description}</Typography>
+                sx={{fontSize: 12, fontStyle: 'italic', textAlign: esMovil ? 'center' : '', padding: esMovil ? '0 10px 0 10px': ''}} >{description}</Typography>
                 </Grid>
                 </Grid>
             </CardContent>

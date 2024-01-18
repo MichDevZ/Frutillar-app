@@ -165,7 +165,7 @@ export const Main = () => {
                     Uber
                 </Button>
 
-              <Link href={"/ropa"}>
+              <Link href={"/ropa"} style={{textDecoration: 'none'}}>
                 <Button sx={{
                   whiteSpace: 'nowrap',
                   textTransform: 'none',
