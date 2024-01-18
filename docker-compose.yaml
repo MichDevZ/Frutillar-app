@@ -1,7 +1,7 @@
 services:
   frutillarAppdb:
-    image:  mongo:5.0.0
-    container_name: frutillar-database
+    image:  mongo:6.0.2
+    container_name: frutillar2-database
     ports:
       - 27017:27017
     volumes:

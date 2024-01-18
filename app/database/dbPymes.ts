@@ -24,12 +24,12 @@ export async function getPymeBySlug (slug: string | null) {
 
     await db.connect();
     const pyme = await Pymes.find({slug: slug})
-    await db.disconnect();
 
     if (pyme.length <= 0) {
         redirect('./')
     }
 
+    await db.disconnect();
     return pyme
     
 }
