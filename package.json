@@ -9,14 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/dancing-script": "^5.0.16",
+    "@mui/icons-material": "^5.15.3",
+    "@mui/material": "^5.15.3",
+    "aws4": "^1.12.0",
+    "axios": "^1.6.5",
+    "mongoose": "^8.0.4",
+    "next": "14.0.4",
+    "next-auth": "^4.24.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-hook-form": "^7.49.3",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/react-dom": "^18",
+    "typescript": "^5"
   }
 }
