@@ -223,6 +223,11 @@ export const Main = () => {
                     sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Uñas</MenuItem>
                   </Link>
 
+                  <Link href={"/costura"} style={{textDecoration: 'none'}}>
+                    <MenuItem onClick={handleClose} 
+                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Costuras - Bordados - Otros</MenuItem>
+                  </Link>
+
                 </Menu>
 
       
