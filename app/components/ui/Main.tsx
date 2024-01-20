@@ -165,6 +165,26 @@ export const Main = () => {
                     Uber
                 </Button>
 
+                <Link href={"/tiendas"} style={{textDecoration: 'none'}}>
+                <Button sx={{
+                  whiteSpace: 'nowrap',
+                  textTransform: 'none',
+                  flexGrow: 1, 
+                  color: 'white', 
+                  fontSize: esMovil ? 10 : 14,
+                  mr: esMovil ? 2 : 1, 
+                  fontStyle: 'italic', 
+                  fontWeight: "bold",
+                  border: '1px solid',
+                  '&:hover': {
+                    background: 'rgba(255, 256, 237, 0.1)',
+                    transition: 'all 0.2s ease'
+                  }}}>
+                   Tiendas
+                </Button>
+
+                </Link>
+
               <Link href={"/ropa"} style={{textDecoration: 'none'}}>
                 <Button sx={{
                   whiteSpace: 'nowrap',

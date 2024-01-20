@@ -84,7 +84,7 @@ const sendComment = async () => {
            onChange={e => setCommentToSend(e.target.value)} ></TextField>
           <Button variant='contained' 
           onClick={data?.user.user ? sendComment : handleOpen} 
-          sx={{my: 1, textTransform: 'none'}} >Comentar</Button>
+          sx={{my: 1, textTransform: 'none'}} >{data?.user.user ? 'Enviar comentario' : 'Inicia sesión acá para comentar'}</Button>
           <Chip 
               label='El comentario debe tener al menos 6 carácteres'
               color='error'
