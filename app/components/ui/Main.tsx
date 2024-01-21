@@ -238,9 +238,9 @@ export const Main = () => {
                     <MenuItem onClick={handleClose} 
                     sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Barberias</MenuItem>
                   </Link>
-                  <Link href={"/uñas"} style={{textDecoration: 'none'}}>
+                  <Link href={"/unas"} style={{textDecoration: 'none'}}>
                     <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Uñas</MenuItem>
+                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Uñas - Pestañas</MenuItem>
                   </Link>
 
                   <Link href={"/costura"} style={{textDecoration: 'none'}}>

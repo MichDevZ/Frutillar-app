@@ -9,20 +9,21 @@ export async function GET (req: NextRequest) {
 
     await pymes.insertMany({
         images: [
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705784195/pqkgwqwqhnm1ktsgndwg.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705784195/wume86ywzne0shjgvsme.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705784195/vixodacsuqoykbv2ktiu.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705784195/rtwz1hu4zvxd75e6kbev.jpg'
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800617/t0d5emiwmvcsitr4o4xc.jpg',
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800617/sp8tq83kc7btlyrtm4m4.jpg',
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800630/jmkdwhjq0akasfpgvpxr.jpg',
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800630/achbp0qvmzfxhrogcyen.jpg',
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800629/gvl9zfskv5xatry8pk5i.jpg'
     
         ],
-        slug: 'girly_luxe',
-        title: 'Girly Luxe',
+        slug: 'maron_studio',
+        title: 'Maron Studio',
         description:
-         'Tienda de productos de cuidado femenino. Encontrarás exfoliantes naturales, maquillaje y productos de cuidado capilar. Todos nuestros productos son Cruelty Free!',
-        instagram: 'instagram.com/girlyluxe.cl',
-        whatsapp: 'wa.me/56936397884',
+         'Homestudio enfocado en dar servicios de belleza tales como lifting de pestañas, extensión de pestañas, manicure dama y varón, esmaltado permanente, extensión de uñas (acrílicas, polygel, softgel) visagismo y perfilado de cejas',
+        instagram: 'instagram.com/_maronstudio_',
+        whatsapp: 'wa.me/56986083820',
         comments: [],
-        tags: ['tiendas'],
+        tags: ['unas', 'pestañas'],
         rating: []
     })
 
