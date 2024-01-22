@@ -19,7 +19,7 @@ const PymePage = async ({params}: any) => {
     <Grid container my={4} display={'flex'} justifyContent={'center'} >
 
       <Grid item sm={12} xs={12}  display={'flex'} justifyContent={'center'}> 
-        <Grid item sm={6} xs={12}  >
+        <Grid item sm={6} xs={12}  alignSelf={'center'} textAlign={'center'} >
         <PymeSwiper images={pymes[0].images} />
         </Grid>
       </Grid>
