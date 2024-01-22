@@ -15,7 +15,6 @@ const PymePage = async ({params}: any) => {
 
   const finalRating = sumRating / pymes[0].rating.length
 
-
   return (
     <Grid container my={4} display={'flex'} justifyContent={'center'} >
 
@@ -51,7 +50,7 @@ const PymePage = async ({params}: any) => {
               <Typography component={'h3'} fontSize={20}>Siguenos en nuestras redes sociales!</Typography>
           </Grid>
           <Grid item sm={12} textAlign={'center'} my={1}>
-            <Link href={`http://${pymes[0].whatsapp}`} target={'_blank'}>
+            <Link href={`http://${pymes[0].whatsapp}`} style={{display: pymes[0].whatsapp ? '' : 'none' }} target={'_blank'}>
               <WhatsApp
               sx={{background: '#25D366', 
                         color: 'white', 
@@ -60,7 +59,7 @@ const PymePage = async ({params}: any) => {
                         mr: 1
                         }} />
               </Link>
-              <Link href={`http://${pymes[0].instagram}`} target={'_blank'}>
+              <Link href={`http://${pymes[0].instagram}`} style={{display: pymes[0].instagram ? '' : 'none' }} target={'_blank'}>
               <Instagram sx={{background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)', 
                         color: 'white', 
                         borderRadius: '30%', 

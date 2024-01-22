@@ -90,6 +90,11 @@ export const Main = () => {
                     sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Hamburguesas</MenuItem>
                   </Link>
 
+                  <Link href={"/tablas"} style={{textDecoration: 'none'}}>
+                    <MenuItem onClick={handleClose} 
+                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Tablas</MenuItem>
+                  </Link>
+
                   <Link href={"/papas"} style={{textDecoration: 'none'}}>
                     <MenuItem onClick={handleClose} 
                     sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Papas fritas</MenuItem>
@@ -148,7 +153,7 @@ export const Main = () => {
                     sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Hospedaje</MenuItem>
 
                 </Menu>
-                <Link href={'/uber'}>
+                <Link href={'/uber'} style={{textDecoration: 'none'}}>
                 <Button sx={{
                   textTransform: 'none',
                   flexGrow: 1, 

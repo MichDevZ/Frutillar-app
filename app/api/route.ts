@@ -9,19 +9,21 @@ export async function GET (req: NextRequest) {
 
     await pymes.insertMany({
         images: [
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705947173/liv1appnpsrj9lyufwe1.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705947173/ouhjcjj0jfj0yludx3qe.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705947173/lownpimozrkjbtbrajib.jpg'
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705948324/enmgru6zekvkhbixgldd.png',
         ],
-        slug: 'go_safe',
-        title: 'Go Safe',
+        slug: 'alto_cafe',
+        title: 'Alto Café Frutillar',
         description:
-         `GO SAFE ( o " Ir Seguro" traducido del Ingles) es una empresa Creada con la Finalidad de entregar servicios de Transporte de personas, Delivery's y/o Encargos por Compras o retiros se Encomiendas de la forma mas Responsable,  Confiable y Con Tiempos reales.
-         Lo que Comenzo como un Plan B Familiar, hoy lleva mas de 3 años Funcionando.`,
-        instagram: '',
-        whatsapp: 'wa.me/56997770180',
+         `¡Bienvenidos a Alto Café! Sumérgete en la calidez de nuestro ambiente hogareño y familiar, donde cada rincón está impregnado de un encanto único. Nuestro espacio está cuidadosamente decorado con elementos rústicos y confeccionado con productos reciclados, creando así un ambiente acogedor que te invita a relajarte y disfrutar.
+         En Alto Café, la experiencia culinaria es exquisita. Nuestra cocina está impregnada de sabores auténticos y preparada con ingredientes frescos y de la más alta calidad.
+         Tenemos horarios continuados de lunes a lunes de 12am a 12pm, no olvides seguirnos en Instagram alto.cafe.frutillar para no perderte nuestras novedades
+         ` 
+            
+         ,
+        instagram: 'instagram.com/alto.cafe.frutillar',
+        whatsapp: '',
         comments: [],
-        tags: ['uber'],
+        tags: ['tablas'],
         rating: []
     })
 
