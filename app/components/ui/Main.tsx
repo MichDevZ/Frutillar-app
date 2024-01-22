@@ -254,6 +254,12 @@ export const Main = () => {
                     sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Costuras - Bordados - Otros</MenuItem>
                   </Link>
 
+                  <Link href={"/turismo"} style={{textDecoration: 'none'}}>
+                    <MenuItem onClick={handleClose} 
+                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Turismo</MenuItem>
+                  </Link>
+
+
                 </Menu>
 
       
