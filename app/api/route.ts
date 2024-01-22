@@ -9,21 +9,19 @@ export async function GET (req: NextRequest) {
 
     await pymes.insertMany({
         images: [
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800617/t0d5emiwmvcsitr4o4xc.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800617/sp8tq83kc7btlyrtm4m4.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800630/jmkdwhjq0akasfpgvpxr.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800630/achbp0qvmzfxhrogcyen.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705800629/gvl9zfskv5xatry8pk5i.jpg'
-    
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705947173/liv1appnpsrj9lyufwe1.jpg',
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705947173/ouhjcjj0jfj0yludx3qe.jpg',
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705947173/lownpimozrkjbtbrajib.jpg'
         ],
-        slug: 'maron_studio',
-        title: 'Maron Studio',
+        slug: 'go_safe',
+        title: 'Go Safe',
         description:
-         'Homestudio enfocado en dar servicios de belleza tales como lifting de pestañas, extensión de pestañas, manicure dama y varón, esmaltado permanente, extensión de uñas (acrílicas, polygel, softgel) visagismo y perfilado de cejas',
-        instagram: 'instagram.com/_maronstudio_',
-        whatsapp: 'wa.me/56986083820',
+         `GO SAFE ( o " Ir Seguro" traducido del Ingles) es una empresa Creada con la Finalidad de entregar servicios de Transporte de personas, Delivery's y/o Encargos por Compras o retiros se Encomiendas de la forma mas Responsable,  Confiable y Con Tiempos reales.
+         Lo que Comenzo como un Plan B Familiar, hoy lleva mas de 3 años Funcionando.`,
+        instagram: '',
+        whatsapp: 'wa.me/56997770180',
         comments: [],
-        tags: ['unas', 'pestañas'],
+        tags: ['uber'],
         rating: []
     })
 

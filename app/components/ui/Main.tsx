@@ -148,7 +148,7 @@ export const Main = () => {
                     sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Hospedaje</MenuItem>
 
                 </Menu>
-
+                <Link href={'/uber'}>
                 <Button sx={{
                   textTransform: 'none',
                   flexGrow: 1, 
@@ -164,6 +164,7 @@ export const Main = () => {
                   }}}>
                     Uber
                 </Button>
+                </Link>
 
                 <Link href={"/tiendas"} style={{textDecoration: 'none'}}>
                 <Button sx={{

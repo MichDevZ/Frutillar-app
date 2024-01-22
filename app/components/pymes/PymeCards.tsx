@@ -66,7 +66,7 @@ export const PymeCards: FC <Props> = ({title, description, image, rating, instag
                         <p style={{fontSize: 13}}>({finalRating || 0})</p>
                     </Box>
                 <Box>
-                    <Link href={`https://${instagram}`} target="_blank">
+                    <Link href={`https://${instagram}`} style={{display: instagram ? '' : 'none' }} target="_blank">
                         <Instagram  
                         sx={{
                         background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)', 
@@ -78,7 +78,7 @@ export const PymeCards: FC <Props> = ({title, description, image, rating, instag
                         }} />
                     </Link>
 
-                    <Link href={`https://${whatsapp}`} target="_blank">
+                    <Link href={`https://${whatsapp}`} style={{display: whatsapp ? '' : 'none'}} target="_blank">
                         <WhatsApp  
                         sx={{
                         background: '#25D366', 
