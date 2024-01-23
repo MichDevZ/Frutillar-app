@@ -42,7 +42,6 @@ export const PymeSwiper: FC <Props> = ({images}) => {
                 width={esMovil ? 370 : 300} 
                 height={esMovil ? 300 : 250}
                 style={{objectFit: 'fill'}}
-                objectFit={'cover'} 
                  alt={'Frutillar Pyme'}
                   />
             </SwiperSlide>

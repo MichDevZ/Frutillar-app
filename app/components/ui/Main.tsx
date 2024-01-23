@@ -1,5 +1,5 @@
 'use client'
-import { AppBar, Box, Button, Menu, MenuItem, PaperProps, Toolbar, useMediaQuery } from "@mui/material"
+import { AppBar, Box, Button, Menu, MenuItem, Paper, PaperProps, Toolbar, useMediaQuery } from "@mui/material"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
@@ -8,12 +8,40 @@ import { useState } from "react"
 
 export const Main = () => {
 
+  
   const esMovil = useMediaQuery('(max-width:600px)');
+  
+  const menuItemsStyle = {
+      color: 'white',
+     fontWeight: 'bold', 
+     fontSize: esMovil ? 11 : 15 , 
+     display: esMovil ? 'inline-flex' : '',
+     border: esMovil ? '1px solid' : '',
+  }
+  
+  const menuPrincipalStyles = {
+      flexGrow: 1,
+      textTransform: 'none',
+      color: 'white', 
+      fontSize: esMovil ? 10 : 14,
+      mr: esMovil ? 2 : 1, 
+      fontStyle: 'italic', 
+      fontWeight: "bold",
+      whiteSpace: 'nowrap',
+      border: '1px solid',
+      '&:hover': {
+        background: 'rgba(255, 256, 237, 0.1)',
+        transition: 'all 0.2s ease'
+      }
+
+  }
 
     const menuPaperProps: PaperProps = {
         style: {
           backgroundColor: '#cf5a46',
-          maxHeight: esMovil ? 250 : '100%'
+          maxHeight: esMovil ? 250 : '100%',
+          maxWidth: 300,
+          
         },
       };
 
@@ -57,22 +85,11 @@ export const Main = () => {
                 <Button 
                 onClick={handleClickFood}
                 aria-controls="food-menu"
-                sx={{flexGrow: 1,
-                textTransform: 'none',
-                color: 'white', 
-                fontSize: esMovil ? 10 : 14,
-                mr: esMovil ? 2 : 1, 
-                fontStyle: 'italic', 
-                fontWeight: "bold",
-                border: '1px solid',
-                '&:hover': {
-                  background: 'rgba(255, 256, 237, 0.1)',
-                  transition: 'all 0.2s ease'
-                }
-                }}>
+                sx={menuPrincipalStyles}>
                     Comida
                 </Button>
-
+                
+                <Paper>
                 <Menu 
                     id="food-menu"
                     anchorEl={anchorElFood}
@@ -80,60 +97,51 @@ export const Main = () => {
                     open={Boolean(anchorElFood)}
                     onClose={handleClose}
                     PaperProps={menuPaperProps}
+
                 >
-                  <Link href={"/sushi"} style={{textDecoration: 'none'}}>
-                    <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Sushi</MenuItem>
+                  <Link href={"/sushi"} style={{textDecoration: 'none' }} >
+                    <MenuItem onClick={handleClose}  
+                    sx={menuItemsStyle}  >Sushi</MenuItem>
                   </Link>
                   <Link href={"/hamburguesas"} style={{textDecoration: 'none'}}>
-                    <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Hamburguesas</MenuItem>
+                    <MenuItem onClick={handleClose}  
+                    sx={menuItemsStyle} >Hamburguesas</MenuItem>
                   </Link>
 
                   <Link href={"/tablas"} style={{textDecoration: 'none'}}>
-                    <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Tablas</MenuItem>
+                    <MenuItem onClick={handleClose}  
+                    sx={menuItemsStyle} >Tablas</MenuItem>
                   </Link>
 
                   <Link href={"/papas"} style={{textDecoration: 'none'}}>
-                    <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Papas fritas</MenuItem>
+                    <MenuItem onClick={handleClose}  
+                    sx={menuItemsStyle} >Papas fritas</MenuItem>
                   </Link>
 
                       <Link href={"/pizzas"} style={{textDecoration: 'none'}}>
-                    <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Pizzas</MenuItem>
+                    <MenuItem onClick={handleClose}  
+                    sx={menuItemsStyle} >Pizzas</MenuItem>
                   </Link>
                   <Link href={"/completos"} style={{textDecoration: 'none'}}>
-                    <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Completos</MenuItem>
+                    <MenuItem onClick={handleClose}  
+                    sx={menuItemsStyle} >Completos</MenuItem>
                   </Link>
                   <Link href={"/picadas"} style={{textDecoration: 'none'}}>
-                    <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Picadas</MenuItem>
+                    <MenuItem onClick={handleClose}  
+                    sx={menuItemsStyle} >Picadas</MenuItem>
                   </Link>
                   <Link href={"/empanadas"} style={{textDecoration: 'none'}}>
-                    <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15}} >Empanadas</MenuItem>
+                    <MenuItem onClick={handleClose}  
+                    sx={menuItemsStyle} >Empanadas</MenuItem>
                   </Link>
-                    
                 </Menu>
+
+                </Paper>
 
                 <Button 
                 onClick={handleClickLodging}
                 aria-controls="lodging-menu"
-                sx={{flexGrow: 1,
-                textTransform: 'none',
-                color: 'white',  
-                fontSize: esMovil ? 10 : 14,
-                mr: esMovil ? 2 : 1, 
-                fontStyle: 'italic', 
-                fontWeight: "bold",
-                border: '1px solid',
-                '&:hover': {
-                  background: 'rgba(255, 256, 237, 0.1)',
-                  transition: 'all 0.2s ease'
-                }}}
+                sx={menuPrincipalStyles}
                 >
                     Hospedaje
                 </Button>
@@ -154,58 +162,20 @@ export const Main = () => {
 
                 </Menu>
                 <Link href={'/uber'} style={{textDecoration: 'none'}}>
-                <Button sx={{
-                  textTransform: 'none',
-                  flexGrow: 1, 
-                  color: 'white', 
-                  fontSize: esMovil ? 10 : 14,
-                  mr: esMovil ? 2 : 1, 
-                  fontStyle: 'italic', 
-                  fontWeight: "bold",
-                  border: '1px solid',
-                  '&:hover': {
-                    background: 'rgba(255, 256, 237, 0.1)',
-                    transition: 'all 0.2s ease'
-                  }}}>
+                <Button sx={menuPrincipalStyles}>
                     Uber
                 </Button>
                 </Link>
 
                 <Link href={"/tiendas"} style={{textDecoration: 'none'}}>
-                <Button sx={{
-                  whiteSpace: 'nowrap',
-                  textTransform: 'none',
-                  flexGrow: 1, 
-                  color: 'white', 
-                  fontSize: esMovil ? 10 : 14,
-                  mr: esMovil ? 2 : 1, 
-                  fontStyle: 'italic', 
-                  fontWeight: "bold",
-                  border: '1px solid',
-                  '&:hover': {
-                    background: 'rgba(255, 256, 237, 0.1)',
-                    transition: 'all 0.2s ease'
-                  }}}>
+                <Button sx={menuPrincipalStyles}>
                    Tiendas
                 </Button>
 
                 </Link>
 
               <Link href={"/ropa"} style={{textDecoration: 'none'}}>
-                <Button sx={{
-                  whiteSpace: 'nowrap',
-                  textTransform: 'none',
-                  flexGrow: 1, 
-                  color: 'white', 
-                  fontSize: esMovil ? 10 : 14,
-                  mr: esMovil ? 2 : 1, 
-                  fontStyle: 'italic', 
-                  fontWeight: "bold",
-                  border: '1px solid',
-                  '&:hover': {
-                    background: 'rgba(255, 256, 237, 0.1)',
-                    transition: 'all 0.2s ease'
-                  }}}>
+                <Button sx={menuPrincipalStyles}>
                     Ropa - Accesorios
                 </Button>
 
@@ -214,19 +184,7 @@ export const Main = () => {
                 <Button
                   onClick={handleClickServices}
                   aria-controls="services-menu"
-                sx={{
-                  textTransform: 'none',
-                  flexGrow: 1, 
-                  color: 'white', 
-                  fontSize: esMovil ? 10 : 14,
-                  mr: esMovil ? 2 : 1, 
-                  fontStyle: 'italic', 
-                  fontWeight: "bold",
-                  border: '1px solid',
-                  '&:hover': {
-                    background: 'rgba(255, 256, 237, 0.1)',
-                    transition: 'all 0.2s ease'
-                  }}}
+                sx={menuPrincipalStyles}
                   
                   >
                     Servicios
