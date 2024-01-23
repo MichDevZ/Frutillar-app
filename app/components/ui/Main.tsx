@@ -17,6 +17,8 @@ export const Main = () => {
      fontSize: esMovil ? 11 : 15 , 
      display: esMovil ? 'inline-flex' : '',
      border: esMovil ? '1px solid' : '',
+     marginLeft: esMovil ? 1.5 : 0,
+    marginBottom: esMovil ? 1 : 0
   }
   
   const menuPrincipalStyles = {
@@ -41,6 +43,7 @@ export const Main = () => {
           backgroundColor: '#cf5a46',
           maxHeight: esMovil ? 250 : '100%',
           maxWidth: 300,
+          justifyContent: 'center',
           
         },
       };
