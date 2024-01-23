@@ -137,6 +137,10 @@ export const Main = () => {
                     <MenuItem onClick={handleClose}  
                     sx={menuItemsStyle} >Empanadas</MenuItem>
                   </Link>
+                  <Link href={"/pasteleria"} style={{textDecoration: 'none'}}>
+                    <MenuItem onClick={handleClose}  
+                    sx={menuItemsStyle} >Pasteleria</MenuItem>
+                  </Link>
                 </Menu>
 
                 </Paper>

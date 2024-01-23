@@ -9,30 +9,16 @@ export async function GET (req: NextRequest) {
 
     await pymes.insertMany({
         images: [
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705951824/lok7uwdzkoh48dy4l75a.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705951825/vzweg8dfozrojdx5y5hj.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705951825/udqtl2eudrfg9nqqqhvo.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705951825/amzysuqw4j87ybew2veb.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705951825/m703sdxhywtulbddshxd.jpg',
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1705951825/cl1d9zyzyhi2zp78obat.jpg'
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1706038322/osnhy9zazr1jtut8epxb.jpg',
 
         ],
-        slug: 'transporte_turismo_frutillar',
-        title: 'Transporte Turismo Frutillar',
-        description:`La belleza de nuestra zona y sus hermosas ciudades que la rodean como la ciudad de Puerto varas también conocida como la ciudad de las Rosas,
-        cercana Puerto Montt conocido por su mercado tipico de angelmo y artesanías.
-        Frutillar es una hermosa ciudad de pioneros Alemanes que trajeron sus costumbres y culturas,
-        También es llamada la cuidad de la música interpretada por nuestro hermoso teatro del lago.
-        
-        Transporte Turismo Frutillar
-        Es una empresa de frutillar dedicada al transporte de pasajeros y turismo
-        Para nuestros amigos de frutillar y todos nuestros queridos visitantes cada día llegan a  nuestra zona
-        
-        Agradecemos a todos nuestros clientes que cada día se suman a este Equipo de trabajo dedicados a uds para que puedan tener un viaje tranquilo y placentero.` ,
-        instagram: 'instagram.com/manueltransportesfrutillar',
-        whatsapp: 'wa.me/56973190096',
+        slug: 'meloso_sin_culpa',
+        title: 'Meloso Sin Culpa',
+        description:`Mi nombre es Consuelo Solís, Terapeuta Ocupacional de profesión, llevo 3 años dedicando parte de mi tiempo a la alimentación libre de azúcar, de a poco a tomado fuerza y cada día crece más con el cariño de los clientes, cuento con más de 100 productos Sin azúcar añadida, entre ellos Chocolatería, repostería y masas.` ,
+        instagram: 'instagram.com/Meloso_sin_culpa',
+        whatsapp: 'wa.me/56990031235',
         comments: [],
-        tags: ['turismo'],
+        tags: ['pasteleria'],
         rating: []
     })
 
