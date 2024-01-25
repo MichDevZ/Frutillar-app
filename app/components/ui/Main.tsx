@@ -50,6 +50,8 @@ export const Main = () => {
 
     const [anchorElFood, setAnchorElFood] = useState<null | HTMLElement>(null);
     const [anchorServices, setanchorServices] = useState<null | HTMLElement>(null);
+    const [anchorStores, setanchorStores] = useState<null | HTMLElement>(null);
+    
     
     const [anchorElLodging, setAnchorElLodging] = useState<null | HTMLElement>(null);
 
@@ -65,10 +67,15 @@ export const Main = () => {
         setanchorServices(event.currentTarget);
       };
 
+      const handleClickStores = (event: React.MouseEvent<HTMLButtonElement>) => {
+        setanchorStores(event.currentTarget);
+      };
+
       const handleClose = () => {
         setAnchorElFood(null);
         setAnchorElLodging(null);
-        setanchorServices(null)
+        setanchorServices(null);
+        setanchorStores(null);
       };
 
 
@@ -174,19 +181,48 @@ export const Main = () => {
                 </Button>
                 </Link>
 
-                <Link href={"/tiendas"} style={{textDecoration: 'none'}}>
-                <Button sx={menuPrincipalStyles}>
+                
+                <Button
+                 onClick={handleClickStores}
+                 aria-controls="store-menu"
+                 sx={menuPrincipalStyles}>
                    Tiendas
                 </Button>
 
-                </Link>
+                
+                <Menu 
+                    id="stores-menu"
+                    anchorEl={anchorStores}
+                    keepMounted
+                    open={Boolean(anchorStores)}
+                    onClose={handleClose}
+                    PaperProps={menuPaperProps}
+                >
 
-              <Link href={"/ropa"} style={{textDecoration: 'none'}}>
-                <Button sx={menuPrincipalStyles}>
-                    Ropa - Accesorios
-                </Button>
+                    <Link href={"/cosmetica"} style={{textDecoration: 'none'}}>
+                      <MenuItem onClick={handleClose} 
+                      sx={menuItemsStyle} >Maquillaje - Cuidado Corporal</MenuItem>
+                  </Link>
 
-                </Link>
+                    <Link href={"/hogar"} style={{textDecoration: 'none'}}>
+                      <MenuItem onClick={handleClose} 
+                      sx={menuItemsStyle} >Articulos Para El Hogar</MenuItem>
+                  </Link>
+
+                  <Link href={"/regalos"} style={{textDecoration: 'none'}}>
+                      <MenuItem onClick={handleClose} 
+                      sx={menuItemsStyle} >Regalos y Ocasiones Especiales</MenuItem>
+                  </Link>
+
+                  <Link href={"/ropa"} style={{textDecoration: 'none'}}>
+                      <MenuItem onClick={handleClose} 
+                      sx={menuItemsStyle} >Ropa - Calzado - Accesorios</MenuItem>
+                  </Link>
+
+
+                </Menu>
+
+
 
                 <Button
                   onClick={handleClickServices}
@@ -207,22 +243,22 @@ export const Main = () => {
                 >
                       <Link href={"/barberia"} style={{textDecoration: 'none'}}>
                     <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Barberias</MenuItem>
+                    sx={menuItemsStyle} >Barberias</MenuItem>
+                  </Link>
+                  <Link href={"/turismo"} style={{textDecoration: 'none'}}>
+                    <MenuItem onClick={handleClose} 
+                    sx={menuItemsStyle} >Turismo</MenuItem>
                   </Link>
                   <Link href={"/unas"} style={{textDecoration: 'none'}}>
                     <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Uñas - Pestañas - Homestudio</MenuItem>
+                    sx={menuItemsStyle} >Uñas - Pestañas - Homestudio</MenuItem>
                   </Link>
 
                   <Link href={"/costura"} style={{textDecoration: 'none'}}>
                     <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Costuras - Bordados - Otros</MenuItem>
+                    sx={menuItemsStyle} >Costuras - Bordados - Otros</MenuItem>
                   </Link>
 
-                  <Link href={"/turismo"} style={{textDecoration: 'none'}}>
-                    <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Turismo</MenuItem>
-                  </Link>
 
 
                 </Menu>
