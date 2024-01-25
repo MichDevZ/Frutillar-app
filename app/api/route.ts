@@ -9,16 +9,16 @@ export async function GET (req: NextRequest) {
 
     await pymes.insertMany({
         images: [
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1706038322/osnhy9zazr1jtut8epxb.jpg',
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1706223714/nw88gqbsdcrh7grfvne2.jpg',
 
         ],
-        slug: 'meloso_sin_culpa',
-        title: 'Meloso Sin Culpa',
-        description:`Mi nombre es Consuelo Solís, Terapeuta Ocupacional de profesión, llevo 3 años dedicando parte de mi tiempo a la alimentación libre de azúcar, de a poco a tomado fuerza y cada día crece más con el cariño de los clientes, cuento con más de 100 productos Sin azúcar añadida, entre ellos Chocolatería, repostería y masas.` ,
-        instagram: 'instagram.com/Meloso_sin_culpa',
-        whatsapp: 'wa.me/56990031235',
+        slug: 'luna_shelby',
+        title: 'Luna Shelby HomeStudio De Belleza',
+        description:`✨ Transforma tu belleza con el toque experto de Luna Shelby  tu estilista profesional de confianza. Especializada en la magia de la coloración capilar, manicuras que deslumbran, y maquillaje para eventos inolvidables. En Luna Shelby HomeEstudio, cada detalle cuenta, y cada cliente brilla con su propio resplandor. ¡Reserva tu cita ahora y descubre la diferencia que un toque de profesionalismo puede hacer en tu estilo! 💇‍♀️💅💄 #BellezaConEstilo #ColoraciónProfesional #ManicuraPerfecta #MaquillajeDeEnsueño   ` ,
+        instagram: 'instagram.com/lunahair_colorshelby',
+        whatsapp: 'wa.me/56951179416',
         comments: [],
-        tags: ['pasteleria'],
+        tags: ['unas'],
         rating: []
     })
 

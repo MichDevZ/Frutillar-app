@@ -211,7 +211,7 @@ export const Main = () => {
                   </Link>
                   <Link href={"/unas"} style={{textDecoration: 'none'}}>
                     <MenuItem onClick={handleClose} 
-                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Uñas - Pestañas</MenuItem>
+                    sx={{color: 'white', fontWeight: 'bold', fontSize: esMovil ? 11 : 15 }} >Uñas - Pestañas - Homestudio</MenuItem>
                   </Link>
 
                   <Link href={"/costura"} style={{textDecoration: 'none'}}>
