@@ -256,7 +256,7 @@ export const Main = () => {
 
                   <Link href={"/costura"} style={{textDecoration: 'none'}}>
                     <MenuItem onClick={handleClose} 
-                    sx={menuItemsStyle} >Costuras - Bordados - Otros</MenuItem>
+                    sx={menuItemsStyle} >Costuras - Bordados - Estampados</MenuItem>
                   </Link>
 
 

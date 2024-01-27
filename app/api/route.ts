@@ -9,16 +9,15 @@ export async function GET (req: NextRequest) {
 
     await pymes.insertMany({
         images: [
-            'https://res.cloudinary.com/dz3doiblo/image/upload/v1706223714/nw88gqbsdcrh7grfvne2.jpg',
-
+            'https://res.cloudinary.com/dz3doiblo/image/upload/v1706374073/vr4rqoj10sxinbl3wvi1.jpg',
         ],
-        slug: 'luna_shelby',
-        title: 'Luna Shelby HomeStudio De Belleza',
-        description:`✨ Transforma tu belleza con el toque experto de Luna Shelby  tu estilista profesional de confianza. Especializada en la magia de la coloración capilar, manicuras que deslumbran, y maquillaje para eventos inolvidables. En Luna Shelby HomeEstudio, cada detalle cuenta, y cada cliente brilla con su propio resplandor. ¡Reserva tu cita ahora y descubre la diferencia que un toque de profesionalismo puede hacer en tu estilo! 💇‍♀️💅💄 #BellezaConEstilo #ColoraciónProfesional #ManicuraPerfecta #MaquillajeDeEnsueño   ` ,
-        instagram: 'instagram.com/lunahair_colorshelby',
-        whatsapp: 'wa.me/56951179416',
+        slug: 'estampados_anttera',
+        title: 'Estampados Anttera',
+        description:`Estampados en textil, tazon, mouse pad, botellas y más!` ,
+        instagram: 'instagram.com/estampados_anttera',
+        whatsapp: 'wa.me/56951171423',
         comments: [],
-        tags: ['unas'],
+        tags: ['costura'],
         rating: []
     })
 
